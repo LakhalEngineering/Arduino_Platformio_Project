@@ -7,13 +7,25 @@
 
 float fTest;
 float fTest1;
+float fTest2;
 
 void Task100() {
     //Serial.println("Task100 executed");
     
+    //Test CalcY function
     fTest = CalcY_2(15,10,20,100,200);
     fTest1 = CalcY_3(15,0,10,20,100,200,300);
-   //digitalWrite(LED_BULTIN, Output);  // Turn on LED
+    fTest2 = CalcY_4(30,0,10,20,30,100,200,300,400);
+
+    Serial.println("CalcY_2");
+    Serial.print(fTest);
+    Serial.println("\n");
+    Serial.println("CalcY_3");
     Serial.print(fTest1);
     Serial.println("\n");
+    Serial.println("CalcY_4");
+    Serial.print(fTest2);
+    Serial.println("\n");
+
+    //digitalWrite(LED_BULTIN, Output);  // Turn on LED
 }

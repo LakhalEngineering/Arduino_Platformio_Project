@@ -20,3 +20,18 @@ float CalcY_3(float x, float x1, float x2, float x3, float y1, float y2, float y
     else
         return CalcY_2(x, x2, x3, y2, y3);
 }
+
+float CalcY_4(float x, float x1, float x2, float x3, float x4, float y1, float y2, float y3, float y4)
+{
+    if(x < x2)
+        return CalcY_2(x, x1, x2, y1, y2);
+    else 
+    if(x >= x2 && x < x3)
+        return CalcY_2(x, x2, x3, y2, y3);
+    else
+    if(x >= x3)
+        return CalcY_2(x, x3, x4, y3, y4);
+    else
+        return 0;
+        
+}
