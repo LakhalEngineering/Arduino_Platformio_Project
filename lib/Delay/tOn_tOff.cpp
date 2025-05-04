@@ -2,7 +2,8 @@
 
 bool tOn_tOff(double Period_Off_ms,double Period_On_ms,double Base_Tempi_ms)
 {
-    double Get_Counter_ON_ms, Get_Counter_OFF_ms = 0;
+    static double Get_Counter_ON_ms = 0;
+    static double Get_Counter_OFF_ms = 0;
     bool Output = false;
     if(Period_Off_ms == 0)
     { 
