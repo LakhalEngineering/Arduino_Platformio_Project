@@ -35,3 +35,13 @@ float CalcY_4(float x, float x1, float x2, float x3, float x4, float y1, float y
         return 0;
         
 }
+
+float Grad2Rad(float grad_in)
+{
+    return (grad_in * 3.14159)/180.0;
+}
+
+float Rad2Grad(float rad_in)
+{
+    return (rad_in * 180.0)/3.14189;
+}
