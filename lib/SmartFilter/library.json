@@ -1,0 +1,8 @@
+{
+    "name": "SmartFilter",
+    "version": "1.0.0",
+    "author": "Lakhal",
+    "description": "Filtro mobile con media, minimo e massimo, per sensori analogici.",
+    "keywords": ["filter", "average", "sensor", "smooth"],
+    "license": "MIT"
+  }
